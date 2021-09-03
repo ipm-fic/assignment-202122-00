@@ -1,0 +1,221 @@
+<!doctype html>
+
+<html lang="es">
+
+  
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Enunciado de la práctica">
+  <meta name="author" content="David Cabrero Souto">
+
+  <title>Setup para la práctica 1</title>
+
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/prism.css" rel="stylesheet">
+  <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-coy.css" rel="stylesheet">-->
+  
+</head>
+
+
+<body class="is-preload">
+  
+<!-- Wrapper -->
+<div id="wrapper">
+
+  <!-- Main -->
+  <div id="main">
+    <div class="inner">
+      
+      <!-- Header -->
+      <header id="header">
+	<a href="/" class="logo"><strong>IPM 2020/2021</strong> Práctica 1</a>
+	<ul class="icons">
+	  <li><a href="https://campusvirtual.udc.gal/course/view.php?id=14842" class="icon brands"><img src="/img/logo.png"/></a></li>
+	</ul>
+      </header>
+
+      <!-- Content -->
+<section>
+  <header class="main">
+    <h1>Setup para la práctica 1</h1>
+  </header>
+
+  <span class="image main"><img src="/img/pexels-christina-morillo-1181671.jpg" alt="" /></span>
+  
+  <p>Tu tarea en la primera semana de prácticas es instalar las
+herramientas, lenguajes y librerías necesarios para realizar la
+primera práctica. También tendrás que seguir los tutoriales y
+documentación necesarios para aquellos elementos con los que no estes
+familiarizado.</p>
+<h2>Control de versiones</h2>
+<p>El desarrollo de las prácticas se basa en el uso de un control de
+versiones. Su uso es una norma común en la industria del software. En
+la asignatura no consideraremos ningún trabajo que no este bajo un
+control de versiones.</p>
+<p>El control de versiones establecido para todas las prácticas es
+<a href="https://git-scm.com/">git</a>.</p>
+<p>En teoría ya conoces el funcionamiento básico de un control de
+versiones: confirmar una versión, ver el historial de versiones,
+cambiar a una versión concreta, replicar un repositorio, ...  Además
+del funcionamiento básico, para que puedas sacarle todo el rendimiento
+y que te ayude en la realización de las prácticas en equipo, también
+tienes que conocer: manejo de etiquetas, trabajo con repositorios
+remotos, y manejo de ramas (<em>branches</em>).</p>
+<p>Existen multitud de recursos online para aprender el uso de las
+funcionalidades de <em>git</em> que acabamos de enumerar. Si no sabes por
+donde empezar, prueba con este libro: <a href="https://www.syncfusion.com/ebooks/confirmation/git">Git
+Succinctly</a></p>
+<h2>Repositorios</h2>
+<p>Si has hecho caso a la sección anterior, ya sabrás que una
+características muy interesante de <em>git</em> es que usa un modelo de
+repositorios distribuidos. Durante la realización de los assignments
+no tienes ninguna restricción sobre el número de repositorios que vas
+a usar, ni la localización de los mismos.</p>
+<p>Sin embargo, el seguimiento y la valoración de tu trabajo se tiene que
+realizar sobre un único repositorio. Este repositorio no lo eliges tú,
+está especificado en la descripción de cada práctica. Salvo que se
+indique lo contrario será un repositorio accesible online a traves de
+un servicio de gestión de repositorios como, por ejemplo, <em>GitHub</em>.</p>
+<p>Este repositorio es el <em>repositorio de referencia</em> para las prácticas de
+la asignatura, tienes acceso tanto tú como el profesor que valora tu
+trabajo. Repetimos: El profesor valorará <strong>única y exclusivamente</strong> el
+contenido de dicho repositorio.</p>
+<blockquote>
+<p>Recuerda que un trabajo continuo se refleja en <em>commits</em> y <em>push</em>
+continuos.</p>
+</blockquote>
+<blockquote>
+<p>Recuerda que lo que no está en el repositorio de referencia, no
+existe para el profesor. El profesor sólo evaluará los ficheros que
+están en tu repositorio de referencia. Es más seguro que tú también
+autoevalues tu trabajo sobre un <em>clone</em> de ese repositorio.</p>
+</blockquote>
+<h2>Recursos</h2>
+<p>Para realizar la primera práctica necesitaras <code>python</code> y varias
+librerías. Una de las librerías <code>at-spi</code> y el servicio asociado sólo
+está disponible en linux. Por este motivo, la primera práctica hay que
+realizarla en una plataforma linux (en principio la distribución no es
+relevante). No hay ningún impedimento para usar una máquina virtual.</p>
+<blockquote>
+<p>N.B.: A priori podría parecer posible ejecutar at-spi en macosx o en
+windows + wsl2. Sin embargo, esas opciones están descartadas porque
+no podemos asegurarnos de que realmente funcione.</p>
+</blockquote>
+<p>Como lenguaje de programación, necesitas una instalación de
+<a href="https://www.python.org/"><code>python</code></a>. Normalmente tu S.O. o
+distribución ya tendrá una versión de python instalada por defecto.
+Simplemente asegurate de usar una versión reciente. Ahora mismo la
+última versión par es la <code>3.8</code>, y la impar la <code>3.9</code>.</p>
+<blockquote>
+<p>La siguiente versión <code>3.10</code> está en <em>release candidate</em> 1 desde el 3
+de agosto de 2021. No esperes que llegue una versión oficial antes
+de acabar la práctica.</p>
+</blockquote>
+<p>La librería gráfica que tienes que usar para la interface es <a href="https://www.gtk.org/">Gtk+
+3</a>. Lo normal es encontrarla empaquetada en casi
+cualquier distribución de linux, así que no deberías tener ningún
+problema para instalarla. Algunos escritorios como Gnome, Mate, LXDE,
+Xfce, ... están basados en Gtk+. Si estás usando alguno de esos
+escritorios, ya tendrás instaladas las librerías de Gtk+.</p>
+<blockquote>
+<p>La última versión mayor de Gtk+ es la 4. Sin embargo, muchas
+distribuciones todavía no lo empaquetan, por eso hemos decidido
+postponer su uso durante este curso.</p>
+</blockquote>
+<blockquote>
+<p>BTW, si estás buscando la documentación del api de Gtk+ en python,
+la tienes
+<a href="https://lazka.github.io/pgi-docs/Gtk-3.0/index.html">aquí</a></p>
+</blockquote>
+<p>A continuación necesitaras los
+<a href="https://en.wikipedia.org/wiki/Language_binding"><em>bindings</em></a>
+correspondientes para poder usar la librería Gtk+ desde tu código
+python. Lo más sencillo es usar el <a href="https://www.gtk.org/docs/language-bindings/">mecanismo
+oficial</a>: <em>GObject
+Introspection</em> (<em>GI</em>). Para ellos necesitas el módulo de Gtk+ para GI
+y la libería GI para python. De nuevo, lo habitual es que estén
+empaquetados en tu distribución de linux. Por ejemplo en debian:</p>
+<pre><code>$ sudo apt install gir1.2-gtk-3.0 python3-gi
+</code></pre>
+<p>También necesitas tener funcionando el <a href="https://www.freedesktop.org/wiki/Accessibility/AT-SPI2/">servicio
+<em>AT-SPI</em></a> en
+tu S.O. La manera de conseguirlo dependerá de tu distribución. Por
+ejemplo, si estás usando <em>Gnome</em>, ya debería estar funcionando. Sino,
+por ejemplo en debian tendrías que instalar el paquete
+correspondiente:</p>
+<pre><code>$ sudo apt install at-spi2-core
+</code></pre>
+<p>También necesitarás usar el api de AT-SPI directamente desde
+python. Al igual que ocurre con <em>Gtk+</em>, lo más sencillo es usar
+<em>GObject Introspection</em> (<em>GI</em>). Para ellos necesitas el módulo de
+AT-SPI para GI y la libería GI para python. Por ejemplo en debian:</p>
+<pre><code>$ sudo apt install gir1.2-atspi-2.0 python3-gi
+</code></pre>
+<p>Puedes consultar la documentación del api de AT-SPI
+<a href="https://lazka.github.io/pgi-docs/Atspi-2.0/index.html">aquí</a>.</p>
+<p>Si no quieres usar directamente el api &quot;desnudo&quot; de AT-SPI, puedes
+usar una librería que proporcione una api de más alto nivel como:</p>
+<ul>
+<li>
+<p><a href="https://github.com/GNOME/pyatspi2">pyatpsi2</a>.
+Empaquetado en debian como <code>python3-pyatspi</code></p>
+</li>
+<li>
+<p><a href="https://ldtp.freedesktop.org/wiki/">ldtp</a></p>
+</li>
+<li>
+<p><a href="https://gitlab.com/dogtail/dogtail">dogtail</a>.
+Empaquetado en debian como <code>python3-dogtail</code></p>
+</li>
+<li>
+<p>La librería que usamos en clase: <a href="https://github.com/cabrero/ipm_e2e">ipm_e2e</a>.
+Disponible en <a href="https://pypi.org/project/ipm-e2e/0.0.1/">PyPI</a>.</p>
+<blockquote>
+<p>Si vas a instalar librerías desde PyPI, asegúrate primero de
+concocer el <a href="https://packaging.python.org/tutorials/installing-packages/">proceso y las distintas
+opciones</a>:
+global, user, virtual env</p>
+</blockquote>
+</li>
+</ul>
+<h2>Hola mundo y algo más</h2>
+<p>Aunque existen multitud de tutoriales, aquí tienes uno en el que
+podrás ir desde el mítico <em>¡Hola mundo!</em> y más alla en el uso de la
+librería GTK+ con python: <a href="https://python-gtk-3-tutorial.readthedocs.io/en/latest/">The Python GTK+3
+Tutorial</a>.</p>
+<h2>Trabajo en equipo</h2>
+<p>El trabajo en equipo es una habilidad clave para un/a graduado/a en
+ingeniería informática. Todos los assignments se debe realizar en
+grupos de tres personas. No intentes escaquearte y hacer el trabajo
+por tu cuenta.</p>
+<blockquote>
+<p>N.B.: Las herramientas de IT de las que disponemos nos permiten
+trabajar online con las/os compañera/o. El dominio de
+esas herramientas y esa forma de trabajo también es una habilidad
+muy valiosa, y una de las competencias del título.</p>
+</blockquote>
+<p>Aprovecha este primera semana para formar tu equipo de trabajo antes
+de comenzar la primer práctica.</p>
+
+  
+</section>
+	
+
+
+
+      <!-- Footer -->
+      <footer id="footer">
+        <p class="copyright">&copy; David Cabrero. All rights reserved. Images: <a href="https://www.pexels.com/es-es/foto/libro-de-python-1181671/">Christina Morillo</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+      </footer>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+
+</html>
