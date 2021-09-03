@@ -3,7 +3,10 @@
 Este es el repositorio para la primera semana de prácticas de IPM,
 curso 2021/22.
 
-## Enunciado
+## Documentación
 
 La [documentación](doc/) indica las herramientas, lenguajes y
 librerias necesarios para la realización de la primera práctica.
+
+Esta misma documentación se puede consultar en
+[https://ipm-fic.github.io/assignment-202122-00/](https://ipm-fic.github.io/assignment-202122-00/)
