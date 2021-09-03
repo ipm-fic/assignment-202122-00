@@ -2,7 +2,7 @@
 layout: generic
 title: "Setup para la práctica 1"
 banner:
-  src: "/img/pexels-christina-morillo-1181671.jpg"
+  src: "img/pexels-christina-morillo-1181671.jpg"
   copy_url: "https://www.pexels.com/es-es/foto/libro-de-python-1181671/"
   copy: "Christina Morillo"
 ---
