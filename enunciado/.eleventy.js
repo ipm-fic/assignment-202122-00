@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      output: "../doc"
+      output: "../docs"
     }
   }
 };
