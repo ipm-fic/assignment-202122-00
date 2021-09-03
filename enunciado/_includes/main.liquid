@@ -12,9 +12,8 @@
 
   <title>{{ title }}</title>
 
-  <link href="/css/main.css" rel="stylesheet">
-  <link href="/css/prism.css" rel="stylesheet">
-  <!--<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-coy.css" rel="stylesheet">-->
+  <link href="{{page.url|baseUrl}}css/main.css" rel="stylesheet">
+  <link href="{{page.url|baseUrl}}css/prism.css" rel="stylesheet">
   
 </head>
 
@@ -32,7 +31,7 @@
       <header id="header">
 	<a href="/" class="logo"><strong>{{site.subject}}</strong> {{site.name}}</a>
 	<ul class="icons">
-	  <li><a href="{{site.subject_url}}" class="icon brands"><img src="/img/logo.png"/></a></li>
+	  <li><a href="{{site.subject_url}}" class="icon brands"><img src="{{page.url|baseUrl}}img/logo.png"/></a></li>
 	</ul>
       </header>
 
