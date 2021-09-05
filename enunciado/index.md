@@ -35,7 +35,10 @@ remotos, y manejo de ramas (_branches_).
 Existen multitud de recursos online para aprender el uso de las
 funcionalidades de _git_ que acabamos de enumerar. Si no sabes por
 donde empezar, prueba con este libro: [Git
-Succinctly](https://www.syncfusion.com/ebooks/confirmation/git)
+Succinctly](https://www.syncfusion.com/ebooks/confirmation/git). Si
+prefieres los recursos más interactivos, prueba con esta web: [Git
+Branching](https://learngitbranching.js.org/?locale=es_ES)
+
 
 
 ## Repositorios
